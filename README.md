@@ -1,7 +1,6 @@
- **
 
 ### The signal server of [hlsjs-p2p-engine](https://github.com/cdnbye/hlsjs-p2p-engine)
-** 
+
 This is a distributed signaling implemented using RPC service,you can deploy the code to multiple servers，so that it can handle more signaling.
 
 ### 1.install the redis service
