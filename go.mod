@@ -1,4 +1,4 @@
-module gosignaler
+module gosignaler-cluster
 
 require github.com/gorilla/websocket v1.4.0
 
