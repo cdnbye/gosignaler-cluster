@@ -1,23 +1,23 @@
+ **
+
 ### The signal server of [hlsjs-p2p-engine](https://github.com/cdnbye/hlsjs-p2p-engine)
+** 
+This is a distributed signaling implemented using RPC service,you can deploy the code to multiple servers，so that it can handle more signaling.
 
-### build
-- install dependency
+### 1.install the redis service
+### 2.modify the redisconst.go,update the redis host info
+### 3.of course,you can change others configuration :
+- 3.1 the default server port is 8082,you can modify the serverconst.go and then change the server port;
 
-- go build main.go hub.go handler.go client.go
+- 3.2 the default rpc service post is 9002,you can modify the rpcconst.go and the change the rpc service port;
 
-### test
-```
-import Hls from 'cdnbye';
-var hlsjsConfig = {
-    p2pConfig: {
-        wsSignalerAddr: 'ws://localhost:8081/ws',
-        // Other p2pConfig options provided by hlsjs-p2p-engine
-    }
-};
-// Hls constructor is overriden by included bundle
-var hls = new Hls(hlsjsConfig);
-// Use `hls` just like the usual hls.js ...
-```
+- 3.2 you can modify the logconst.go and the change the log configuration;
+
+### 4.build
+- 4.1 go to the main directory of the code
+
+- 4.2 go build main.go
+
+- 4.2 go run main.go
 
 ### go语言版的 [hlsjs-p2p-engine](https://github.com/cdnbye/hlsjs-p2p-engine)信令服务器
-
