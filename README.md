@@ -19,4 +19,4 @@ This is a distributed signaling implemented using RPC service,you can deploy the
 
 - 4.2 go run main.go
 
-### go语言版的 [hlsjs-p2p-engine](https://github.com/cdnbye/hlsjs-p2p-engine)信令服务器
+###[hlsjs-p2p-engine](https://github.com/cdnbye/hlsjs-p2p-engine)
